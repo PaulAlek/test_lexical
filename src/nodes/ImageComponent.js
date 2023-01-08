@@ -50,7 +50,7 @@ export default function ImageComponent({
   height,
   maxWidth
 }) {
-  const imageRef = useRef<null | HTMLImageElement>(null);
+  const imageRef = useRef(null);
 
   return (
     <Suspense fallback={null}>
